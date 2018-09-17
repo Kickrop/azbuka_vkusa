@@ -12,9 +12,9 @@
 </header>
 <body>
 	<div id="sidebar" class="">
-		<button class="top-nav_btn">
-			<i class="icon-menu"></i>
-		</button>
+		<div class="top-nav_btn">
+			<span></span>
+		</div>
 		<ul id="top-menu" class="top-nav_menu">
 			<li><a href="#home-food" class="active">Домашняя еда</a></li>
 			<li><a href="#healthy-food">Здоровые продукты</a></li>
@@ -457,6 +457,12 @@ function onScroll(event){
         }
     });
 }
+</script>
+<script> //button
+	$('.top-nav_btn').on('click', function(e) {
+  e.preventDefault;
+  $(this).toggleClass('top-nav_btn_active');
+});
 </script>
 </body>
 </html>
