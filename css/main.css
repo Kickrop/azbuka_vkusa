@@ -42,13 +42,6 @@ section {
 #videos h2 {
 	margin-bottom: 40px;
 }
-
-.main-title {
-	color: #fff;
-}
-.first-slide-text {
-	font-weight: 200;
-}
 .logo-top-1 {
 	display: block;
 	width: 100%;
@@ -191,18 +184,38 @@ section {
 	display: block;
 	margin: 0 auto;
 	padding-bottom: 20px;
+	color: #fff;
 }
-.main {
+.main-content {
 	position: relative;
 	display:table;
 	width: 100%;
 	text-align: center;
 	color: #fff;
 	height: 100vh;
+	z-index: 24;
+}
+.box-before {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index:-1;
 	background: #000 url(../images/main-1.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.box-after {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index:-1;
+	background: #000 url(../images/main-2.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 .first-slide-text {
 	font-size: 150%;
+	font-weight: 200;
 }
 .maintxt {
 	display:table-cell;
