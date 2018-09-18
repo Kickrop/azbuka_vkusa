@@ -42,6 +42,19 @@ section {
 #videos h2 {
 	margin-bottom: 40px;
 }
+
+.main-title {
+	color: #fff;
+}
+.first-slide-text {
+	font-weight: 200;
+}
+.logo-top-1 {
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 19px;
+}
 #sidebar {
 	position: fixed;
 	top:0;
@@ -58,6 +71,9 @@ section {
 	position: relative;
 	top: 40px;
 	cursor: pointer;
+}
+.main-links {
+	margin-top: 80px;
 }
 .top-nav_btn span,
 .top-nav_btn span::before,
