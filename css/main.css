@@ -478,12 +478,34 @@ margin-left: -25px;
 }
 
 /*future*/
-.future-media-body1 {
-	margin-top: 0;
-}
-.future-food-quote-text {
 
+.future-media {
+	margin-top: 70px;
 }
-.future-healthy-food-quote {
+.future-food-quote {
+	top: -25px;
+}
+.future-food-quote-short {
 	top: 20px;
+}
+.future-top-title {
+	margin-bottom: 20px;
+}
+.future-top-text {
+	padding: 0 80px;
+	margin-bottom: 40px;
+}
+#future-delivery::before {
+	content: 	'';
+	background: url(../images/future-top-back-img.png) no-repeat;
+	position: 	absolute;
+	width: 100%;
+	height: 100%;
+	right:0px;
+	top: -160px;
+	background-position: center right;
+	/*z-index: 7;*/
+}
+.future-side-text {
+	margin-top: 50px;
 }
