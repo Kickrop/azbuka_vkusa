@@ -43,10 +43,17 @@ section {
 	margin-bottom: 40px;
 }
 .logo-top-1 {
-	display: block;
+	
 	width: 100%;
+	height: 24px;
 	position: absolute;
 	top: 19px;
+}
+#logo-top-white {
+	margin-left:auto;
+	margin-right:auto;
+	width:183px;
+	height:24px;
 }
 #sidebar {
 	position: fixed;
