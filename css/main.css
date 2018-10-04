@@ -46,13 +46,61 @@ section {
 .overlay-title {
 	color: var(--green-text);
 	text-transform: uppercase;
-	font-size: 64px;
+	font-size: 60px;
 	font-weight: 200;
 	text-align: center;
-	margin-top: 60px;
+	margin: 60px 0 50px 0;
 }
 .top-nav-btn-overlay ul {
 	padding:0;
+}
+.top-nav-btn-overlay ul li {
+	margin: 70px auto;
+}
+.top-nav-btn-overlay ul li::before {
+	content: "";
+	height: 60px;
+	position: absolute;
+ border-left: 1px solid var(--green-text);
+ margin-top: -65px;
+ left:50%;
+}
+.top-nav-btn-overlay ul li:first-child:before {
+	margin-top:-70px;
+}
+.top-nav-btn-overlay h5::after {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 20%;
+	padding-top: 5px;
+	border-bottom: 1px solid var(--green-text);
+}
+.top-nav-btn-overlay ul li a {
+	/*padding: 5px;*/
+	transition: .1s;
+}
+.top-nav-btn-overlay ul li a:hover {
+ text-decoration: none;
+ color:#ff0d47;
+ display: block;
+ transform: translateY(5px);
+}
+.overlay-left-pic {
+	background-image: url(../images/bag-of-fruits.png);
+	width: 320px;
+	height: 333px;
+	position: absolute;
+	left: -80px;
+	margin-top: 20%;
+}
+.overlay-right-pic {
+	background-image: url(../images/homefood-back-img.png);
+	width: 290px;
+	height: 397px;
+	position: absolute;
+	right: 0px;
+	margin-top: 20%;
 }
 #videos {
 	margin-top: 175px;
@@ -556,4 +604,13 @@ margin-left: -25px;
 }
 .future-side-text {
 	margin-top: 50px;
+}
+
+@media (max-width: 1100px) {
+ .overlay-pic {
+ 	display: none;
+ }
+ .overlay-title {
+		font-size: 50px;
+}
 }
