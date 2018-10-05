@@ -102,6 +102,35 @@ section {
 	right: 0px;
 	margin-top: 20%;
 }
+.top-nav-btn-overlay-heart {
+	background-image: url(../images/heart.png);
+	width: 17px;
+	height: 15px;
+	cursor: pointer;
+	position: relative;
+	left: 20px;
+}
+.overlay-social {
+	color: #000;
+ position: absolute;
+}
+.overlay-social-notactive {
+	visibility: hidden;
+}
+.overlay-social-active {
+	visibility: visible;
+}
+.top-nav-btn-overlay-years {
+	background-image: url(../images/20_years_logo.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	-webkit-background-size: 80%;
+	background-size: 80%;
+	width: 70px;
+	height: 70px;
+	right: 10px;
+	bottom: 10px;
+}
 #videos {
 	margin-top: 175px;
 }
@@ -113,7 +142,7 @@ section {
 	background-repeat: no-repeat;
 	width:456px;
 	height:283px;
-	position: absolute;
+	position: relative;
 	right: -40px;
 	top: 24px;
 }
