@@ -57,6 +57,7 @@ section {
 .top-nav-btn-overlay ul li {
 	margin: 50px auto;
 	font-size: 14px;
+	font-weight: 600;
 }
 .top-nav-btn-overlay ul li::before {
 	content: "";
@@ -68,10 +69,10 @@ section {
 }
 .top-nav-btn-overlay ul li:first-child:before {
 	margin-top:-50px;
+	height: 50px;
 }
 .top-nav-btn-overlay h5::after {
 	content: "";
-	display: block;
 	margin: 0 auto;
 	width: 20%;
 	padding-top: 5px;
@@ -103,18 +104,28 @@ section {
 	right: 0px;
 	margin-top: 20%;
 }
+.overlay-social-main {
+	cursor: pointer;
+	position: absolute;
+	left: 20px;
+	bottom: 50px;
+	height: 20px;
+	width: 150px;
+	padding: 5px;
+}
 .top-nav-btn-overlay-heart {
 	background-image: url(../images/heart.png);
 	width: 17px;
 	height: 15px;
-	cursor: pointer;
-	position: relative;
-	left: 20px;
-	bottom: 20px;
+	position: absolute;
+	top: 14px;
 }
 .overlay-social {
 	color: #000;
  position: absolute;
+ padding: 5px;
+ font-size: 18px;
+ left:0;
 }
 .overlay-social-notactive {
 	visibility: hidden;
