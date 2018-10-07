@@ -11,7 +11,23 @@
   $('.top-nav-btn-overlay').animate({top:'0'},'slow');
  }
 });
-
+// прелоадер
+// (function($){
+//   'use strict';
+//     $(window).on('load', function () {
+//         if ($(".pre-loader").length > 0)
+//         {
+//             $(".pre-loader").fadeOut("slow");
+//         }
+//     });
+// });
+$(function(){
+  $(window).on("load", function(){
+     $('#loading').fadeOut('slow', function() {
+     	$(this).remove();
+     });
+  });
+});
 
 // $('.next-button').click(function() {
 //     if($(this).parent().hasClass('specific-step')){
