@@ -9,12 +9,16 @@
 	<title>Супермаркет настоящего</title>
 	<link href="css/bootstrap.min.css" media="all" rel="stylesheet" />
 	<link href="css/main.css" media="all" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script> -->
 </header>
 <body>
 <div id="loading"></div>
+		<div class="top-nav_btn">
+			<span></span>
+		</div>
 	<div class="top-nav-btn-overlay">
-					<div class='logo-in-color text-center' style="">
+					<div class='logo-in-color text-center'>
 					    <img src="images/logo-top-2.png" alt="Логотипы">
 				 </div>
 				 <div class="overlay-left-pic overlay-pic"></div>
@@ -61,9 +65,6 @@
 				 </div>
 	</div>
 	<div id="sidebar" class="">
-		<div class="top-nav_btn">
-			<span></span>
-		</div>
 		<ul id="top-menu" class="top-nav_menu future-top-nav_menu">
 			<li><a href="#future-delivery" class="active">Курьеры-роботы</a></li>
 			<li><a href="#freezer">Доставка до холодильника</a></li>
@@ -383,12 +384,6 @@ function onScroll(event){
         }
     });
 }
-</script>
-<script> //button
-	$('.top-nav_btn').on('click', function(e) {
-  e.preventDefault;
-  $(this).toggleClass('top-nav_btn_active');
-});
 </script>
 </body>
 </html>

@@ -29,6 +29,18 @@ $(function(){
   });
 });
 
+
+// social links animation
+	$('.overlay-social-main').hover(function(e) {
+		e.preventDefault;
+		$('.top-nav-btn-overlay-heart').toggleClass('overlay-social-notactive');
+		$('.overlay-social').toggleClass('overlay-social-active');
+		$('#overlay-fb').filter(':not(:animated)').animate({left:'0px'},'slow');
+		$('#overlay-tg').filter(':not(:animated)').animate({left:'25px'},'slow');
+		$('#overlay-vk').filter(':not(:animated)').animate({left:'50px'},'slow');
+		$('#overlay-tw').filter(':not(:animated)').animate({left:'75px'},'slow');
+	});
+
 // $('.next-button').click(function() {
 //     if($(this).parent().hasClass('specific-step')){
 //          performSpecificStep();
