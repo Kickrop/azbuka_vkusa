@@ -43,11 +43,13 @@ section {
  height: 100%;
  z-index:99;
  /*display: none;*/
- /*visibility: hidden;*/
+ /* visibility: hidden; */
+ opacity:0;
  top:-100%;
 }
 .top-nav-btn-overlay-active {
-	/*visibility: visible;*/
+	/* visibility: visible; */
+	opacity: 1;
 	/*display: show;*/
 }
 .overlay-title {
